@@ -1,0 +1,66 @@
+const mongoose = require("mongoose");
+
+const productSchema = mongoose.Schema({
+    name:{
+        type:String,
+        required:true,
+    },
+    subName:{
+        type:String,
+        required:true,
+    },
+    price:{
+        type:Number,
+        required:true,
+    },
+    ingredients:{
+        type:String,
+        required:true,
+    },
+    type:{
+        type:String,
+        required:true,
+    },
+    rating:{
+        type:String,
+        required:true,
+    },
+    banner:{
+        type:String,
+        required:true,
+    },
+    pictures:{
+        type:Array,
+        required:true,
+    },
+    instructions:{
+        type:String,
+        required:true,
+    },
+    video:{
+        type:Array,
+        required:true,
+    },
+    storageLife:{
+        type:String,
+        required:true,
+    },
+    cookingTime:{
+        type:String,
+        required:true,
+    },
+    chefName:{
+        type:String,
+        required:true,
+    },
+    serves:{
+        type:Number,
+        required:true,
+    },
+    description:{
+        type:String,
+        required:true,
+    },
+})
+
+module.exports= mongoose.model("product" , productSchema)
